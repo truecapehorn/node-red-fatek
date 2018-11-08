@@ -1,0 +1,2723 @@
+[
+    {
+        "id": "cd886379.5b6548",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ef0b5dd8.342c18",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "feb7d143.0c127",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ce86bae2.fd3658",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "2efbd554.aad8f2",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temperatury",
+        "tab": "d976d8b4.321058",
+        "disp": true,
+        "width": "17",
+        "collapse": true
+    },
+    {
+        "id": "d976d8b4.321058",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard"
+    },
+    {
+        "id": "4353f961.8f92",
+        "type": "modbus-client",
+        "z": "",
+        "name": "fatek",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "tcpHost": "192.168.0.35",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "unit_id": "1",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectTimeout": "2000"
+    },
+    {
+        "id": "3c80d331.92504c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 0,
+                "cy": 0,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7f18ee5b.0b956",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Temperatury",
+        "icon": "dashboard"
+    },
+    {
+        "id": "256e6c59.234ae4",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temperature",
+        "tab": "7f18ee5b.0b956",
+        "disp": true,
+        "width": "7",
+        "collapse": true
+    },
+    {
+        "id": "9725b447.05aa98",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Discrette",
+        "icon": "dashboard"
+    },
+    {
+        "id": "1af05f8d.6990a",
+        "type": "ui_group",
+        "z": "",
+        "name": "M Relay",
+        "tab": "9725b447.05aa98",
+        "disp": true,
+        "width": "7",
+        "collapse": true
+    },
+    {
+        "id": "f0427e3e.c70b4",
+        "type": "light-scheduler-settings",
+        "z": "",
+        "name": "my settings",
+        "latitude": "53.1324886",
+        "longitude": " 23.1688403"
+    },
+    {
+        "id": "e91eca36.802c88",
+        "type": "modbus-read",
+        "z": "cd886379.5b6548",
+        "name": "temperatury",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "100",
+        "quantity": "10",
+        "rate": "30",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "4353f961.8f92",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "x": 223,
+        "y": 166,
+        "wires": [
+            [
+                "ef1675c3.231138",
+                "c3d0c748.5160f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ef1675c3.231138",
+        "type": "function",
+        "z": "cd886379.5b6548",
+        "name": "scale",
+        "func": "comments=['kuchnia', '³azienka mala', 'lazienka duza','brak','szatania','akwarium','ksiegowe','norki','niemcy','szef' ]\nmsg_o=[msg,msg,msg,msg,msg,msg,msg,msg,msg,msg,]\nfor (i=0;i<10;i++){\n    msg_o[i]= { payload: Number(msg.payload[i])/10*1.0, topic: comments[i] };\n}\nreturn msg_o;",
+        "outputs": 10,
+        "noerr": 0,
+        "x": 390,
+        "y": 164,
+        "wires": [
+            [
+                "8ee9b579.db774"
+            ],
+            [
+                "8ee9b579.db774"
+            ],
+            [
+                "8ee9b579.db774"
+            ],
+            [
+                "8ee9b579.db774"
+            ],
+            [
+                "8ee9b579.db774"
+            ],
+            [
+                "8ee9b579.db774"
+            ],
+            [
+                "8ee9b579.db774"
+            ],
+            [
+                "8ee9b579.db774"
+            ],
+            [
+                "8ee9b579.db774"
+            ],
+            [
+                "8ee9b579.db774"
+            ]
+        ]
+    },
+    {
+        "id": "8ee9b579.db774",
+        "type": "ui_chart",
+        "z": "cd886379.5b6548",
+        "name": "",
+        "group": "2efbd554.aad8f2",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Temperatury",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "x": 801,
+        "y": 167,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c3d0c748.5160f",
+        "type": "function",
+        "z": "cd886379.5b6548",
+        "name": "scale",
+        "func": "\nmsg_o=[];\ncomments=['kuchnia', '³azienka mala', 'lazienka duza','brak','szatania','akwarium','ksiegowe','norki','niemcy','szef' ]\ntemps=msg.payload;\ni=0\nfor (var temp in temps){\n    msg_o.push({payload:temps[temp]/10,topic: comments[i] });\n    i++\n}\nreturn [msg_o];",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 391,
+        "y": 286,
+        "wires": [
+            [
+                "b5f210f7.8802d"
+            ]
+        ]
+    },
+    {
+        "id": "b5f210f7.8802d",
+        "type": "ui_chart",
+        "z": "cd886379.5b6548",
+        "name": "",
+        "group": "256e6c59.234ae4",
+        "order": 0,
+        "width": "6",
+        "height": "7",
+        "label": "Temperatury2",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "x": 802,
+        "y": 282,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6711cd47.9aaa3c",
+        "type": "modbus-read",
+        "z": "ef0b5dd8.342c18",
+        "name": "M relay",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "0",
+        "quantity": "32",
+        "rate": "3",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "4353f961.8f92",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "x": 76,
+        "y": 1083.0001525878906,
+        "wires": [
+            [
+                "6c15fe9b.8fef98",
+                "23b6a72.f74c058"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6c15fe9b.8fef98",
+        "type": "function",
+        "z": "ef0b5dd8.342c18",
+        "name": "Read 32 Discrette Value",
+        "func": "comments=[]\nmsg_o=[]\nfor (i=0;i<32;i++){\n    msg_o[i]= { payload: Number(msg.payload[i]), topic: 'input'+String(i) };\n}\nreturn msg_o;",
+        "outputs": 32,
+        "noerr": 0,
+        "x": 280.0000305175781,
+        "y": 1097.0001220703125,
+        "wires": [
+            [
+                "926d2188.0bf69"
+            ],
+            [
+                "11b159c2.d2cc7e"
+            ],
+            [
+                "5747f0c8.5dfd68"
+            ],
+            [
+                "e43e2656.0c5b48"
+            ],
+            [
+                "d1d0c1b6.f1a398"
+            ],
+            [
+                "5c89f3c9.1e14e4"
+            ],
+            [
+                "9216a63c.6987f"
+            ],
+            [
+                "7f2bf84b.20341"
+            ],
+            [
+                "de7a015a.775ef"
+            ],
+            [
+                "465711b4.cf945"
+            ],
+            [
+                "def07975.1bd098"
+            ],
+            [
+                "d473b2ac.673ab"
+            ],
+            [
+                "82a1317e.8739b"
+            ],
+            [
+                "93d0e94a.06ceb"
+            ],
+            [
+                "cb584eb5.1e44f8"
+            ],
+            [
+                "5046cc06.25a21c"
+            ],
+            [
+                "10f81c10.f7ba04"
+            ],
+            [
+                "1bcf4937.504047"
+            ],
+            [
+                "194e3950.8e43af"
+            ],
+            [
+                "8125f2af.4e901"
+            ],
+            [
+                "ccdc868a.5e04a8"
+            ],
+            [
+                "110de98c.856cb6"
+            ],
+            [
+                "aa29221c.2d017"
+            ],
+            [
+                "270b5f89.1d431"
+            ],
+            [
+                "384eaa03.112c86"
+            ],
+            [
+                "21344f40.b9ef38"
+            ],
+            [
+                "38702af3.397006"
+            ],
+            [
+                "e2ea82a2.099a08"
+            ],
+            [
+                "fff1a90.07d0058"
+            ],
+            [
+                "c96c08f8.f5425"
+            ],
+            [
+                "51b69ea7.68f3d8"
+            ],
+            [
+                "4e87500f.ef2038"
+            ]
+        ]
+    },
+    {
+        "id": "23b6a72.f74c058",
+        "type": "function",
+        "z": "ef0b5dd8.342c18",
+        "name": "scale",
+        "func": "\nmsg_o=[];\ncomments=[]\ninputs=msg.payload;\ni=0\nfor (var input in inputs){\n    msg_o.push({payload:Number(inputs[input]),topic: 'input'+String(i) });\n    i++\n}\nreturn [msg_o];",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 196.58334350585938,
+        "y": 728.75,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1d51ac51.b25ff4",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2000",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2000",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 882.8667602539062,
+        "y": 331.41656494140625,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ac0909eb.e40528",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s0",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 730.86669921875,
+        "y": 330.9166259765625,
+        "wires": [
+            [
+                "1d51ac51.b25ff4"
+            ]
+        ]
+    },
+    {
+        "id": "926d2188.0bf69",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 603.8666381835938,
+        "y": 332.75,
+        "wires": [
+            [
+                "ac0909eb.e40528"
+            ]
+        ]
+    },
+    {
+        "id": "6e696392.60f7bc",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2001",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2001",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 883.88330078125,
+        "y": 385.7833251953125,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "20f0ca8d.48155e",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s1",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 731.8832397460938,
+        "y": 385.28338623046875,
+        "wires": [
+            [
+                "6e696392.60f7bc"
+            ]
+        ]
+    },
+    {
+        "id": "11b159c2.d2cc7e",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 604.8831787109375,
+        "y": 387.11676025390625,
+        "wires": [
+            [
+                "20f0ca8d.48155e"
+            ]
+        ]
+    },
+    {
+        "id": "3b658644.4020e2",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2002",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2002",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 881.88330078125,
+        "y": 434.7833251953125,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ff7c416a.cddac8",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s2",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 729.8832397460938,
+        "y": 434.28338623046875,
+        "wires": [
+            [
+                "3b658644.4020e2"
+            ]
+        ]
+    },
+    {
+        "id": "5747f0c8.5dfd68",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 602.8831787109375,
+        "y": 436.11676025390625,
+        "wires": [
+            [
+                "ff7c416a.cddac8"
+            ]
+        ]
+    },
+    {
+        "id": "5ff2886.0c0c1f8",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2003",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2003",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 882.8998413085938,
+        "y": 489.15008544921875,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d4fdf8f.c903888",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s3",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 730.8997802734375,
+        "y": 488.650146484375,
+        "wires": [
+            [
+                "5ff2886.0c0c1f8"
+            ]
+        ]
+    },
+    {
+        "id": "e43e2656.0c5b48",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 603.8997192382812,
+        "y": 490.4835205078125,
+        "wires": [
+            [
+                "d4fdf8f.c903888"
+            ]
+        ]
+    },
+    {
+        "id": "dc6d42b7.d3df3",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2004",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2004",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 884.88330078125,
+        "y": 535.7833251953125,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "26741205.d568de",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s4",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 732.8832397460938,
+        "y": 535.2833862304688,
+        "wires": [
+            [
+                "dc6d42b7.d3df3"
+            ]
+        ]
+    },
+    {
+        "id": "d1d0c1b6.f1a398",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 605.8831787109375,
+        "y": 537.1167602539062,
+        "wires": [
+            [
+                "26741205.d568de"
+            ]
+        ]
+    },
+    {
+        "id": "f7e7bf5a.37ebb8",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2005",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2005",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 885.8998413085938,
+        "y": 590.1500854492188,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "49cb5ff2.8e67b8",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s5",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 733.8997802734375,
+        "y": 589.650146484375,
+        "wires": [
+            [
+                "f7e7bf5a.37ebb8"
+            ]
+        ]
+    },
+    {
+        "id": "5c89f3c9.1e14e4",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 606.8997192382812,
+        "y": 591.4835205078125,
+        "wires": [
+            [
+                "49cb5ff2.8e67b8"
+            ]
+        ]
+    },
+    {
+        "id": "ce831357.31eac",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2006",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2006",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 883.8998413085938,
+        "y": 639.1500854492188,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "67e5a15.405f06",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s6",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 731.8997802734375,
+        "y": 638.650146484375,
+        "wires": [
+            [
+                "ce831357.31eac"
+            ]
+        ]
+    },
+    {
+        "id": "9216a63c.6987f",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 604.8997192382812,
+        "y": 640.4835205078125,
+        "wires": [
+            [
+                "67e5a15.405f06"
+            ]
+        ]
+    },
+    {
+        "id": "2ad4d07f.3fdef8",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2007",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2007",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 884.9163818359375,
+        "y": 693.516845703125,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "74400c03.f380ac",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s7",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 732.9163208007812,
+        "y": 693.0169067382812,
+        "wires": [
+            [
+                "2ad4d07f.3fdef8"
+            ]
+        ]
+    },
+    {
+        "id": "7f2bf84b.20341",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 605.916259765625,
+        "y": 694.8502807617188,
+        "wires": [
+            [
+                "74400c03.f380ac"
+            ]
+        ]
+    },
+    {
+        "id": "9594fe55.6273b8",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2008",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2008",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 880.88330078125,
+        "y": 738.7833251953125,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a4fd53af.facd",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s8",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 728.8832397460938,
+        "y": 738.2833862304688,
+        "wires": [
+            [
+                "9594fe55.6273b8"
+            ]
+        ]
+    },
+    {
+        "id": "de7a015a.775ef",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 601.8831787109375,
+        "y": 740.1167602539062,
+        "wires": [
+            [
+                "a4fd53af.facd"
+            ]
+        ]
+    },
+    {
+        "id": "b79b425a.ef1a2",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2009",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2009",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 881.8998413085938,
+        "y": 793.1500854492188,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a67e775f.0c7d6",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s9",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 729.8997802734375,
+        "y": 792.650146484375,
+        "wires": [
+            [
+                "b79b425a.ef1a2"
+            ]
+        ]
+    },
+    {
+        "id": "465711b4.cf945",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 602.8997192382812,
+        "y": 794.4835205078125,
+        "wires": [
+            [
+                "a67e775f.0c7d6"
+            ]
+        ]
+    },
+    {
+        "id": "e0046564.da896",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2010",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2010",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 879.88330078125,
+        "y": 850.9833374023438,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8c8cfaee.75b89",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s10",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 727.8832397460938,
+        "y": 850.4833984375,
+        "wires": [
+            [
+                "e0046564.da896"
+            ]
+        ]
+    },
+    {
+        "id": "def07975.1bd098",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 600.8831787109375,
+        "y": 852.3167724609375,
+        "wires": [
+            [
+                "8c8cfaee.75b89"
+            ]
+        ]
+    },
+    {
+        "id": "7e4993f2.0db9fc",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2011",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2011",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 880.8998413085938,
+        "y": 905.35009765625,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "e938ee4f.44a388",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s11",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 728.8997802734375,
+        "y": 904.8501586914062,
+        "wires": [
+            [
+                "7e4993f2.0db9fc"
+            ]
+        ]
+    },
+    {
+        "id": "d473b2ac.673ab",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 601.8997192382812,
+        "y": 906.6835327148438,
+        "wires": [
+            [
+                "e938ee4f.44a388"
+            ]
+        ]
+    },
+    {
+        "id": "731e1ef4.74f048",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2012",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2012",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 878.8998413085938,
+        "y": 954.35009765625,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f2806b07.16eb1",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s12",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 726.8997802734375,
+        "y": 953.8501586914062,
+        "wires": [
+            [
+                "731e1ef4.74f048"
+            ]
+        ]
+    },
+    {
+        "id": "82a1317e.8739b",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 599.8997192382812,
+        "y": 955.6835327148438,
+        "wires": [
+            [
+                "f2806b07.16eb1"
+            ]
+        ]
+    },
+    {
+        "id": "66476d9c.fa249c",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2013",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2013",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 879.9163818359375,
+        "y": 1008.7168579101562,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "23c801aa.94d436",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s13",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 14,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 727.9163208007812,
+        "y": 1008.2169189453125,
+        "wires": [
+            [
+                "66476d9c.fa249c"
+            ]
+        ]
+    },
+    {
+        "id": "93d0e94a.06ceb",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 600.916259765625,
+        "y": 1010.05029296875,
+        "wires": [
+            [
+                "23c801aa.94d436"
+            ]
+        ]
+    },
+    {
+        "id": "a334799d.71f9f8",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2014",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2014",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 881.8998413085938,
+        "y": 1055.35009765625,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "30765084.ac10f",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s14",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 15,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 729.8997802734375,
+        "y": 1054.8501586914062,
+        "wires": [
+            [
+                "a334799d.71f9f8"
+            ]
+        ]
+    },
+    {
+        "id": "cb584eb5.1e44f8",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 602.8997192382812,
+        "y": 1056.6835327148438,
+        "wires": [
+            [
+                "30765084.ac10f"
+            ]
+        ]
+    },
+    {
+        "id": "f6ce1d0f.195e9",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2015",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2015",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 882.9163818359375,
+        "y": 1109.7168579101562,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8c4a07a.101a6f8",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s15",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 16,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 730.9163208007812,
+        "y": 1109.2169189453125,
+        "wires": [
+            [
+                "f6ce1d0f.195e9"
+            ]
+        ]
+    },
+    {
+        "id": "5046cc06.25a21c",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 603.916259765625,
+        "y": 1111.05029296875,
+        "wires": [
+            [
+                "8c4a07a.101a6f8"
+            ]
+        ]
+    },
+    {
+        "id": "6e0ddac2.26ff7c",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2016",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2016",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 880.9163818359375,
+        "y": 1158.7168579101562,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "2132e636.8ebeaa",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s16",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 17,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 728.9163208007812,
+        "y": 1158.2169189453125,
+        "wires": [
+            [
+                "6e0ddac2.26ff7c"
+            ]
+        ]
+    },
+    {
+        "id": "10f81c10.f7ba04",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 601.916259765625,
+        "y": 1160.05029296875,
+        "wires": [
+            [
+                "2132e636.8ebeaa"
+            ]
+        ]
+    },
+    {
+        "id": "30c54559.3f239a",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2017",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2017",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 881.9329223632812,
+        "y": 1213.0836181640625,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "2644ff66.6052a8",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s17",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 18,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 729.932861328125,
+        "y": 1212.5836791992188,
+        "wires": [
+            [
+                "30c54559.3f239a"
+            ]
+        ]
+    },
+    {
+        "id": "1bcf4937.504047",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 602.9328002929688,
+        "y": 1214.4170532226562,
+        "wires": [
+            [
+                "2644ff66.6052a8"
+            ]
+        ]
+    },
+    {
+        "id": "e779a9f3.ee2858",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2018",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2018",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 877.8998413085938,
+        "y": 1258.35009765625,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "5eff7097.8ece2",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s18",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 19,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 725.8997802734375,
+        "y": 1257.8501586914062,
+        "wires": [
+            [
+                "e779a9f3.ee2858"
+            ]
+        ]
+    },
+    {
+        "id": "194e3950.8e43af",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 598.8997192382812,
+        "y": 1259.6835327148438,
+        "wires": [
+            [
+                "5eff7097.8ece2"
+            ]
+        ]
+    },
+    {
+        "id": "6665a05f.9a93d8",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2019",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2019",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 878.9163818359375,
+        "y": 1312.7168579101562,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "74d59c46.df3564",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s19",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 20,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 726.9163208007812,
+        "y": 1312.2169189453125,
+        "wires": [
+            [
+                "6665a05f.9a93d8"
+            ]
+        ]
+    },
+    {
+        "id": "8125f2af.4e901",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 599.916259765625,
+        "y": 1314.05029296875,
+        "wires": [
+            [
+                "74d59c46.df3564"
+            ]
+        ]
+    },
+    {
+        "id": "8e254bd2.a6dd18",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2020",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2020",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 872.88330078125,
+        "y": 1370.38330078125,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "62ba2b09.3ce08c",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s20",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 21,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 720.8832397460938,
+        "y": 1369.8833618164062,
+        "wires": [
+            [
+                "8e254bd2.a6dd18"
+            ]
+        ]
+    },
+    {
+        "id": "ccdc868a.5e04a8",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 593.8831787109375,
+        "y": 1371.7167358398438,
+        "wires": [
+            [
+                "62ba2b09.3ce08c"
+            ]
+        ]
+    },
+    {
+        "id": "917615f6.6528d",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2021",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2021",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 873.8998413085938,
+        "y": 1424.7500610351562,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "5cc7403b.d56f2",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s21",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 22,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 721.8997802734375,
+        "y": 1424.2501220703125,
+        "wires": [
+            [
+                "917615f6.6528d"
+            ]
+        ]
+    },
+    {
+        "id": "110de98c.856cb6",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 594.8997192382812,
+        "y": 1426.08349609375,
+        "wires": [
+            [
+                "5cc7403b.d56f2"
+            ]
+        ]
+    },
+    {
+        "id": "9cf8c16f.b4169",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2022",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2022",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 871.8998413085938,
+        "y": 1473.7500610351562,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "516a2741.c0ce18",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s22",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 23,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 719.8997802734375,
+        "y": 1473.2501220703125,
+        "wires": [
+            [
+                "9cf8c16f.b4169"
+            ]
+        ]
+    },
+    {
+        "id": "aa29221c.2d017",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 592.8997192382812,
+        "y": 1475.08349609375,
+        "wires": [
+            [
+                "516a2741.c0ce18"
+            ]
+        ]
+    },
+    {
+        "id": "d1563245.4625f8",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2023",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2023",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 872.9163818359375,
+        "y": 1528.1168212890625,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "22e1e790.eed6d8",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s23",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 24,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 720.9163208007812,
+        "y": 1527.6168823242188,
+        "wires": [
+            [
+                "d1563245.4625f8"
+            ]
+        ]
+    },
+    {
+        "id": "270b5f89.1d431",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 593.916259765625,
+        "y": 1529.4502563476562,
+        "wires": [
+            [
+                "22e1e790.eed6d8"
+            ]
+        ]
+    },
+    {
+        "id": "2b0c3e47.d77022",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2024",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2024",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 874.8998413085938,
+        "y": 1574.7500610351562,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c6b9744c.bd8808",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s24",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 25,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 722.8997802734375,
+        "y": 1574.2501220703125,
+        "wires": [
+            [
+                "2b0c3e47.d77022"
+            ]
+        ]
+    },
+    {
+        "id": "384eaa03.112c86",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 595.8997192382812,
+        "y": 1576.08349609375,
+        "wires": [
+            [
+                "c6b9744c.bd8808"
+            ]
+        ]
+    },
+    {
+        "id": "971fc0ee.394748",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2025",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2025",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 875.9163818359375,
+        "y": 1629.1168212890625,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "5f7ce886.f7b4a8",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s25",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 26,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 723.9163208007812,
+        "y": 1628.6168823242188,
+        "wires": [
+            [
+                "971fc0ee.394748"
+            ]
+        ]
+    },
+    {
+        "id": "21344f40.b9ef38",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 596.916259765625,
+        "y": 1630.4502563476562,
+        "wires": [
+            [
+                "5f7ce886.f7b4a8"
+            ]
+        ]
+    },
+    {
+        "id": "5c182977.81e3f8",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2026",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2026",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 873.9163818359375,
+        "y": 1678.1168212890625,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "5a4f012e.05483",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s26",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 27,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 721.9163208007812,
+        "y": 1677.6168823242188,
+        "wires": [
+            [
+                "5c182977.81e3f8"
+            ]
+        ]
+    },
+    {
+        "id": "38702af3.397006",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 594.916259765625,
+        "y": 1679.4502563476562,
+        "wires": [
+            [
+                "5a4f012e.05483"
+            ]
+        ]
+    },
+    {
+        "id": "4a4c5af4.d325dc",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2027",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2027",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 874.9329223632812,
+        "y": 1732.4835815429688,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a0b7756a.517268",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s27",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 28,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 722.932861328125,
+        "y": 1731.983642578125,
+        "wires": [
+            [
+                "4a4c5af4.d325dc"
+            ]
+        ]
+    },
+    {
+        "id": "e2ea82a2.099a08",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 595.9328002929688,
+        "y": 1733.8170166015625,
+        "wires": [
+            [
+                "a0b7756a.517268"
+            ]
+        ]
+    },
+    {
+        "id": "d458d632.d92b3",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2028",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2028",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 870.8998413085938,
+        "y": 1777.7500610351562,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "46b3cced.b4702c",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s28",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 29,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 718.8997802734375,
+        "y": 1777.2501220703125,
+        "wires": [
+            [
+                "d458d632.d92b3"
+            ]
+        ]
+    },
+    {
+        "id": "fff1a90.07d0058",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 591.8997192382812,
+        "y": 1779.08349609375,
+        "wires": [
+            [
+                "46b3cced.b4702c"
+            ]
+        ]
+    },
+    {
+        "id": "40c0e225.717424",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2029",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2029",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 871.9163818359375,
+        "y": 1832.1168212890625,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "69f52815.14255",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s29",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 30,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 719.9163208007812,
+        "y": 1831.6168823242188,
+        "wires": [
+            [
+                "40c0e225.717424"
+            ]
+        ]
+    },
+    {
+        "id": "c96c08f8.f5425",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 592.916259765625,
+        "y": 1833.4502563476562,
+        "wires": [
+            [
+                "69f52815.14255"
+            ]
+        ]
+    },
+    {
+        "id": "28fe6ea6.feafe2",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2030",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2030",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 871.88330078125,
+        "y": 1890.0999755859375,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d26e0d17.e5da08",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s30",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 31,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 719.8832397460938,
+        "y": 1889.6000366210938,
+        "wires": [
+            [
+                "28fe6ea6.feafe2"
+            ]
+        ]
+    },
+    {
+        "id": "51b69ea7.68f3d8",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 592.8831787109375,
+        "y": 1891.4334106445312,
+        "wires": [
+            [
+                "d26e0d17.e5da08"
+            ]
+        ]
+    },
+    {
+        "id": "e3ae972f.a87568",
+        "type": "modbus-write",
+        "z": "ef0b5dd8.342c18",
+        "name": "Write Adr. 2031",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "unitid": "1",
+        "dataType": "Coil",
+        "adr": "2031",
+        "quantity": "1",
+        "server": "4353f961.8f92",
+        "x": 872.8998413085938,
+        "y": 1944.4667358398438,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "e305e92f.3be2d",
+        "type": "ui_switch",
+        "z": "ef0b5dd8.342c18",
+        "name": "s31",
+        "label": "{{msg.topic}}",
+        "group": "1af05f8d.6990a",
+        "order": 32,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 720.8997802734375,
+        "y": 1943.966796875,
+        "wires": [
+            [
+                "e3ae972f.a87568"
+            ]
+        ]
+    },
+    {
+        "id": "4e87500f.ef2038",
+        "type": "rbe",
+        "z": "ef0b5dd8.342c18",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 593.8997192382812,
+        "y": 1945.8001708984375,
+        "wires": [
+            [
+                "e305e92f.3be2d"
+            ]
+        ]
+    },
+    {
+        "id": "672f3ae2.7c0044",
+        "type": "light-scheduler",
+        "z": "feb7d143.0c127",
+        "settings": "f0427e3e.c70b4",
+        "events": "[{\"start\":{\"dow\":2,\"mod\":420},\"end\":{\"dow\":2,\"mod\":660}},{\"start\":{\"dow\":3,\"mod\":510},\"end\":{\"dow\":3,\"mod\":735}},{\"start\":{\"dow\":5,\"mod\":405},\"end\":{\"dow\":5,\"mod\":570}},{\"start\":{\"dow\":0,\"mod\":540},\"end\":{\"dow\":0,\"mod\":735}}]",
+        "topic": "",
+        "name": "",
+        "onPayload": "ON",
+        "onPayloadType": "str",
+        "offPayload": "OFF",
+        "offPayloadType": "str",
+        "onlyWhenDark": false,
+        "sunElevationThreshold": 6,
+        "sunShowElevationInStatus": true,
+        "outputfreq": "output.statechange.startup",
+        "x": 345.8833312988281,
+        "y": 144.88333129882812,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "59ec778a.4ed28",
+        "type": "inject",
+        "z": "feb7d143.0c127",
+        "name": "",
+        "topic": "",
+        "payload": "auto",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 177.8833770751953,
+        "y": 149.30003356933594,
+        "wires": [
+            [
+                "672f3ae2.7c0044"
+            ]
+        ]
+    }
+]
